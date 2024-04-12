@@ -1,0 +1,147 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.border-custom {
+    border: 1px solid;
+    border-color: #2E3192 !important;
+}
+
+.bg-custom {
+    background: linear-gradient(120deg, #5d61ac, #7a7cbf) !important;
+}
+
+.cont-cont {
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(50deg, #3b40a3, #7a7cbf) !important; */
+    background: radial-gradient(#8081af, #9598bd);
+    /* background: radial-gradient(#D0CDD7, #9598bd); */
+}
+
+.basis-custom-width {
+    flex-basis: 30vw;
+}
+
+.basis-custom-width-div1 {
+    flex-basis: 3vw;
+}
+
+.basis-custom-height {
+    flex-basis: 70vh;
+}
+
+.logo-img-cont-custom {
+    width: 100px;
+    height: 100px;
+}
+
+.logo-img-cont-custom-small {
+    width: 30px;
+    height: 30px;
+}
+
+.logo-img {
+    width: 80px;
+    height: 50px;
+}
+
+.logo-img-small {
+    width: 50px;
+    height: 30px;
+}
+
+.pfp-img-cont-custom {
+    width: 120px;
+    height: 120px;
+}
+
+.pfp-img {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.pfp-img-small {
+    width: 30px;
+    height: 30px;
+}
+
+.home-list {
+    list-style: none;
+}
+
+.home-list-li {
+    margin-bottom: 3px;
+}
+
+.home-a-link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0px;
+    padding-left: 10px;
+
+}
+
+.home-a-link:hover {
+    background-color: #2E3192;
+    color: white;
+    border-radius: 5px;
+}
+
+.home-a-link:active {
+    background-color: #7a7cbf;
+}
+
+#div2-close:hover {
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+/* supplier */
+
+.alink {
+    color: white;
+    text-decoration: none;
+
+}
+
+.cp {
+    cursor: pointer;
+}
+
+table {
+    font-size: 13px;
+}
+
+/* supplier */
+
+/* material icons start */
+.material-symbols-outlined {
+    cursor: pointer;
+    font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24,
+}
+
+/* material icons icons end */
+
+/* custom height and width starts*/
+
+.custom-height {
+    height: 60%;
+}
+
+.custom-width {
+    width: 60%;
+}
+
+/* custom height and width  ends */
