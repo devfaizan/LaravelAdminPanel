@@ -9,19 +9,6 @@ use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\CustomerPaymentController;
 use App\Http\Controllers\SupplierPaymentController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-
-
 Route::group(['middleware' => 'guest'], function () {
     Route::get('/', function () {
         return view('auth/register');
@@ -40,21 +27,18 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/logout', [AdminController::class, 'adminLogout']);
     Route::view('/updateprofile', 'auth/updateprofile');
     Route::post('/updateprofile', [AdminController::class, 'updateProfile']);
+
     Route::view('/suppliers', 'suppliers/suppliers');
     Route::get('/suppliers', [SupplierController::class, 'showSuppliers']);
     Route::view('/addsupplier', 'suppliers/addsupplier');
     Route::post('/addsupplier', [SupplierController::class, 'addSupplier']);
-    // Route::view('/editsupplier', 'suppliers/editsupplier');
-    // Route::get('/editsupplier', [SupplierController::class, 'editSuppliers']);
     Route::get('/editsupplier/{id}', [SupplierController::class, 'editSupplier'])->name('editsupplier');
     Route::post('/updatesupplier/{id}', [SupplierController::class, 'updateSupplier'])->name('updatesupplier');
     Route::get('/deletesupplier/{id}', [SupplierController::class, 'deleteSupplier'])->name('deletesupplier');
 
     Route::view('/products', 'products/products');
     Route::get('/products', [ProductController::class, 'showProducts']);
-    //for app to get products
     Route::get('/getproducts', [ProductController::class, 'getProducts']);
-
     Route::view('/addproduct', 'products/addproduct');
     Route::post('/addproduct', [ProductController::class, 'addProduct']);
     Route::get('/editproduct/{id}', [ProductController::class, 'editProduct'])->name('editproduct');
@@ -76,7 +60,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/updateorder/{id}', [OrderController::class, 'updateOrder'])->name('updateorder');
 
     Route::view('/mainpayment', 'mainpayment');
-
     Route::view('/supplierpayment', 'payments/supplierpayments/payments');
     Route::get('/supplierpayment', [SupplierPaymentController::class, 'showSupplierPayments']);
     Route::view('/addsupplierpayment', 'payments/supplierpayments/addpayment');
@@ -84,7 +67,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/editsupplierpayment/{id}', [SupplierPaymentController::class, 'editSupplierPayment'])->name('editsupplierpayment');
     Route::post('/updatesupplierpayment/{id}', [SupplierPaymentController::class, 'updateSupplierPayment'])->name('updatesupplierpayment');
     Route::get('/deletesupplierpayment/{id}', [SupplierPaymentController::class, 'deleteSupplierPayment'])->name('deletesupplierpayment');
-
 
     Route::view('/customerpayment', 'payments/customerpayments/payments');
     Route::get('/customerpayment', [CustomerPaymentController::class, 'showCustomerPayments']);
