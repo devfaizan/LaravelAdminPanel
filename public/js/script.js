@@ -9,7 +9,7 @@ function toggleSmallMenu() {
     if (isSmallMenuCollapsed) {
         const normalMenu = document.getElementById('div2');
         normalMenu.classList.remove('visually-hidden');
-
+        localStorage.setItem('isNormalMenuCollapsed', false);
     }
 }
 function toggleNormalMenu() {
@@ -22,14 +22,28 @@ function toggleNormalMenu() {
     if (isNormalMenuCollapsed) {
         const smallMenu = document.getElementById('div1');
         smallMenu.classList.remove('visually-hidden');
-
+        localStorage.setItem('isSmallMenuCollapsed', false);
     }
 }
 document.getElementById('div2-close').addEventListener('click', toggleNormalMenu);
 document.getElementById('menu-button').addEventListener('click', toggleSmallMenu);
 
-// menu collapse ends
-
+window.addEventListener('load', () => {
+    const isSmallMenuCollapsed = localStorage.getItem('isSmallMenuCollapsed') === 'true';
+    const isNormalMenuCollapsed = localStorage.getItem('isNormalMenuCollapsed') === 'true';
+    const smallMenu = document.getElementById('div1');
+    const normalMenu = document.getElementById('div2');
+    if (isSmallMenuCollapsed) {
+        smallMenu.classList.add('visually-hidden');
+    } else {
+        smallMenu.classList.remove('visually-hidden');
+    }
+    if (isNormalMenuCollapsed) {
+        normalMenu.classList.add('visually-hidden');
+    } else {
+        normalMenu.classList.remove('visually-hidden');
+    }
+});
 
 // validation for text starts
 function validateInputText(inputElement) {
@@ -43,7 +57,6 @@ function validateInputText(inputElement) {
 
 // validation for number starts
 function validateInputNumber(inputElement) {
-    // var containsOnlyText = /^[A-Za-z ]+$/.test(inputElement.value);
     var containsOnlyNumbers = /^[0-9]+$/.test(inputElement.value);
     if (!containsOnlyNumbers) {
         alert("Please enter numbers only, no letter,spaces and special characters allowed!");
