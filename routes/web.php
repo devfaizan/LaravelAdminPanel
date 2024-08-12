@@ -71,6 +71,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/updatestock/{id}', [StockController::class, 'updateStock'])->name('updatestock');
     Route::get('/deletestock/{id}', [StockController::class, 'deleteStock'])->name('deletestock');
 
+    Route::get('/orders/{status?}', [OrderController::class, 'showOrders']);
+    Route::get('/editorder/{id}', [OrderController::class, 'editOrder'])->name('editorder');
+    Route::post('/updateorder/{id}', [OrderController::class, 'updateOrder'])->name('updateorder');
+
     Route::view('/mainpayment', 'mainpayment');
 
     Route::view('/supplierpayment', 'payments/supplierpayments/payments');
