@@ -2,14 +2,17 @@
 ### This is admin view/dashboard for venorawatersupply system
 ### look at customer view here https://github.com/devfaizan/venorawatersupply-android
 ### Register
-![vwd-panel-push-1](https://github.com/user-attachments/assets/3aa5a974-1e1c-49f0-9ac4-93f0cca88354)
+![vwd-panel-push-1](https://github.com/user-attachments/assets/acc4a317-e3d3-472a-af88-7ef7849b65b3)
 ### Login
-![vwd-panel-push-2](https://github.com/user-attachments/assets/4ce4a1fc-0bdd-482a-ae14-ec76424eb48c)
+![vwd-panel-push-2](https://github.com/user-attachments/assets/24c81b88-9c2b-452a-9dcc-5c665135a57b)
 ### Orders
-![vwd-panel-push-3](https://github.com/user-attachments/assets/e3bf8b7a-8377-4942-8da0-4e8b04807373)
+![vwd-panel-push-4](https://github.com/user-attachments/assets/f18ff313-ab53-4284-95ce-79c1000c617c)
+### Stock
+![vwd-panel-push-5](https://github.com/user-attachments/assets/71f08a4c-304b-459d-b208-b3273fc9ecf7)
 ### Suppliers
-![vwd-panel-push-5](https://github.com/user-attachments/assets/2c1fa61f-082f-466e-82b1-0764c50e2367)
+![vwd-panel-push-6](https://github.com/user-attachments/assets/05ebfd54-3a36-4744-afb8-7ac8e36a3097)
 ### Products
-![vwd-panel-push-6](https://github.com/user-attachments/assets/bb6124e8-5949-4a9d-b273-8f4d0f993073)
+![vwd-panel-push-7](https://github.com/user-attachments/assets/0f276172-bdd1-4171-afc7-d4236fea2c48)
 ### Profile
-![vwd-panel-push-8](https://github.com/user-attachments/assets/cee2bd5f-8fb5-427c-9006-22928dbd9a73)
+![vwd-panel-push-9](https://github.com/user-attachments/assets/59e10064-6ff4-44ab-b5f9-e78e8507e491)
+
