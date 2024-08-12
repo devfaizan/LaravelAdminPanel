@@ -33,7 +33,7 @@ class SupplierController extends Controller
     public function showSuppliers()
     {
 
-        $suppliers = Supplier::with('admin')->paginate(4);
+        $suppliers = Supplier::with('admin')->paginate(5);
         if (!$suppliers) {
             return redirect('/suppliers')->with('error', 'Supplier not found');
         }

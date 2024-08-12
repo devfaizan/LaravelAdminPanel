@@ -8,7 +8,7 @@
     @include('utils/cdn')
     <link rel="stylesheet" href=" {{ asset('css/custom.css') }} ">
     @include('utils/favi')
-</head>
+</head> 
 
 <body>
 
@@ -30,10 +30,6 @@
                     </a>
                 </div>
             </div>
-            <div class="container my-3">
-                <h3 class="px-2 ">Current Stock</h3>
-            </div>
-            <hr class="bg-dark p-0 m-0">
             <div class="container mt-4 mb-4 p-2 ">
                 <table class="table table-hover table-bordered">
                     <thead class="text-center">

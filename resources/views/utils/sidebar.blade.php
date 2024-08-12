@@ -19,7 +19,7 @@
                 </a>
             </li>
             <li class="home-list-li">
-                <a href="/home" class="home-a-link">
+                <a href="/orders" class="home-a-link">
                     <div class="d-flex align-items-center ">
                         <span class="material-symbols-outlined me-3">orders</span>
                     </div>
@@ -113,7 +113,7 @@
                     </a>
                 </li>
                 <li class="home-list-li">
-                    <a href="/home" class="home-a-link">
+                    <a href="/orders" class="home-a-link">
                         <div class="d-flex align-items-center ">
                             <span class="material-symbols-outlined me-3">orders</span>
                             <span>Orders</span>

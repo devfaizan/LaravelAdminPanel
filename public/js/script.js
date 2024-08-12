@@ -4,11 +4,12 @@ function toggleSmallMenu() {
     smallMenu.classList.toggle('visually-hidden');
 
     const isSmallMenuCollapsed = smallMenu.classList.contains('visually-hidden');
-    // localStorage.setItem('smallMenuCollapsed', JSON.stringify(isSmallMenuCollapsed));
+    localStorage.setItem('isSmallMenuCollapsed', isSmallMenuCollapsed);
 
     if (isSmallMenuCollapsed) {
         const normalMenu = document.getElementById('div2');
         normalMenu.classList.remove('visually-hidden');
+
     }
 }
 function toggleNormalMenu() {
@@ -16,15 +17,17 @@ function toggleNormalMenu() {
     normalMenu.classList.toggle('visually-hidden');
 
     const isNormalMenuCollapsed = normalMenu.classList.contains('visually-hidden');
-    // localStorage.setItem('normalMenuCollapsed', JSON.stringify(isNormalMenuCollapsed));
+    localStorage.setItem('isNormalMenuCollapsed', isNormalMenuCollapsed);
 
     if (isNormalMenuCollapsed) {
         const smallMenu = document.getElementById('div1');
         smallMenu.classList.remove('visually-hidden');
+
     }
 }
 document.getElementById('div2-close').addEventListener('click', toggleNormalMenu);
 document.getElementById('menu-button').addEventListener('click', toggleSmallMenu);
+
 // menu collapse ends
 
 

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class DCartItem extends Model
+class DupCartItem extends Model
 {
     use HasFactory;
 
@@ -26,6 +26,6 @@ class DCartItem extends Model
 
     public function cart()
     {
-        return $this->belongsTo(DCart::class, 'cart_id');
+        return $this->belongsTo(DupCarts::class, 'cart_id');
     }
 }

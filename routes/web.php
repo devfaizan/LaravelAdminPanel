@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\StockController;
@@ -39,7 +40,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/logout', [AdminController::class, 'adminLogout']);
     Route::view('/updateprofile', 'auth/updateprofile');
     Route::post('/updateprofile', [AdminController::class, 'updateProfile']);
-
     Route::view('/suppliers', 'suppliers/suppliers');
     Route::get('/suppliers', [SupplierController::class, 'showSuppliers']);
     Route::view('/addsupplier', 'suppliers/addsupplier');

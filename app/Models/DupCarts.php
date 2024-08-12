@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class DCart extends Model
+class DupCarts extends Model
 {
     use HasFactory;
 
@@ -20,7 +20,7 @@ class DCart extends Model
     // Define relationships
     public function items()
     {
-        return $this->hasMany(CartItem::class, 'cart_id');
+        return $this->hasMany(DupCartItem::class, 'cart_id');
     }
 
     public function customer()

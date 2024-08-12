@@ -36,10 +36,6 @@
                     </a>
                 </div> --}}
             </div>
-            <div class="container my-3">
-                <h3 class="px-2 ">Current Suppliers</h3>
-            </div>
-            <hr class="bg-dark p-0 m-0">
             <div class="container mt-4 mb-4 p-2 ">
                 <table class="table table-hover table-bordered ">
                     <thead>
@@ -62,7 +58,7 @@
                                 <td>{{ $supplier->supplier_email }}</td>
                                 <td>{{ $supplier->supplier_address }}</td>
                                 <td>{{ $supplier->supplier_phone }}</td>
-                                <td>{{ $supplier->admin->name }}</td>
+                                <td>{{ $supplier->admin->name }}</td> 
                                 <td>
                                     @if($supplier->last_update_by)
                                         {{ $supplier->lastUpdateAdmin->name }}

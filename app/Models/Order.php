@@ -2,7 +2,8 @@
 
 namespace App\Models;
 
-use App\Models\OrderProducts;
+// use App\Models\OrderProducts;
+use App\Models\DCartItem;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -24,8 +25,12 @@ class Order extends Model
         return $this->belongsTo(Customer::class);
     }
 
-    public function items()
+    // public function cart()
+    // {
+    //     return $this->hasMany(DupCartItem::class, 'cart_id');
+    // }
+    public function cart()
     {
-        return $this->hasMany(DCartItem::class, 'cart_id');
+        return $this->belongsTo(DupCarts::class, 'cart_id', 'cart_id');
     }
 }

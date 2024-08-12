@@ -36,7 +36,7 @@ class StockController extends Controller
     public function showStocks()
     {
 
-        $stocks = Stock::with('admin')->paginate(4);
+        $stocks = Stock::with('admin')->paginate(5);
         if (!$stocks) {
             return redirect('/stocks')->with('error', 'Stock not found');
         }
